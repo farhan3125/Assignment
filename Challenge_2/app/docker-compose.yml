@@ -1,0 +1,12 @@
+version: '4.35.1'
+
+services:
+  flaskapp:
+    build: .
+    ports:
+      - "5000:5000"
+    #volumes:
+    #  - ./uploads:/app/uploads
+    environment:
+      - FLASK_ENV=development
+      - FLASK_APP=app.py
